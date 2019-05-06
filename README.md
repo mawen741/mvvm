@@ -1,11 +1,11 @@
 # mvvm
   双向数据绑定
-var vm = {}
+  
+        var vm = {}
         var data = {
             name: 'zhangsan',
             age: 20
         }
-
         var key, value
         for (key in data) {
             (function (key) {
@@ -20,5 +20,6 @@ var vm = {}
                     }
                 })
             })(key)
-        }
-vm.name=123;vm.name
+        };
+        vm.name=123;
+        vm.name;
