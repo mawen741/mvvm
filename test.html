@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>maql</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<input type="text" name="" placeholder="请输入地址" id="url">
+	<button id="btn">提交</button>
+</body>
+<script type="text/javascript">
+	window.onload = function () {
+		var btn = document.getElementById('btn');
+		btn.onclick = function () {
+			var url = document.getElementById('url').value;
+			if (!url) {
+				alert('请输入地址');
+			} else {
+				window.location.href = url;
+			}
+		}
+		
+	}
+</script>
+</html>
